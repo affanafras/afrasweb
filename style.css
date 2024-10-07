@@ -1,0 +1,183 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(to right , #414d41,#acd698);
+}
+
+.login-signup{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    background-color: rgb(224, 217, 217);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.6);
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.login-signup h2{
+    margin-bottom: 35px;
+    color: #51995d;
+    padding: 0;
+    text-align: center;
+}
+
+.login-signup .user-box{
+    position: relative;
+}
+.login-signup .user-box input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #1d1c1c;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #1d1c1c;
+    margin-bottom: 30px;
+}
+.login-signup .user-box label{
+    position: absolute;
+    color: #1d1c1c;
+    top: 0;
+    left: 0;
+    font-size: 16px;
+    padding: 10px 0;
+    pointer-events: none;
+    transition: .5s;
+}
+.login-signup .user-box input:focus ~ label , .login-signup .user-box input:valid ~ label{
+    top: -20px;
+    left: 0;
+    color: #34814c;
+    font-size: 12px;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn button{
+    padding: 5px 10px;
+    color: #38b156;
+    background-color: rgb(33, 36, 34);
+    border: 2px solid #1ab682;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+h4{
+    color: #1d1c1c;
+    margin-top: 30px;
+    text-align: center;
+}
+
+h4 span{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #34814c;
+}
+
+.forgot-pwd h4{
+    color: #34814c;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.loader{
+    display: none;
+    border: 6px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 6px solid #34814c;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.user-details h1{
+    text-align: center;
+    color: #090979;
+    font-size: 60px;
+}
+
+.user-details button{
+    float: right;
+    padding: 20px 10px;
+    background-color: #090979;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin-right: 40px;
+    border-radius: 20px;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+#delivery-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    background-color: #fff;
+}
+
+
+.item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.item-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
